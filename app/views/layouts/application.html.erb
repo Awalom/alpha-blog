@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AlphaBlog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div style="background-color:black; color:white;padding:10px;">
+      <h1> Independent Eritrean Community Bern</h1>
+      <div style="background-color:blue;color:red; padding:0px;">
+        <h1> Independent Eritrean Community Bern</h1>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>

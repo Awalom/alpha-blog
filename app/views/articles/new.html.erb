@@ -1,4 +1,15 @@
 <h2> <u> Create a new Article </u></h2>
+<!--if there is error in the date entry this code will handle it -->
+
+<% if @article.errors.any? %>
+		<h3> The following errrors prevented the article form being created</h3>
+		<ul>
+			<% @article.errors.full_messages.each do |msg| %>
+				<li> <%= msg %> </li>
+			<%end%>
+		</ul>
+<%end%>
+
 <%= form_for @article do |f| %>
 	<p>
 		<%= f.label :title %> </br>

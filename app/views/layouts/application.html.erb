@@ -16,6 +16,13 @@
         <h1> Independent Eritrean Community Bern</h1>
       </div>
     </div>
+    <!-- this massage will appear if only flash has error form the new template -->
+    <% flash.each do |name, msg| %>
+      <ul>
+        <li> <%= msg %></li>
+      </ul>
+    <%end%>
+    
     <%= yield %>
   </body>
 </html>
